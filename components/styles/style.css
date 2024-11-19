@@ -1,0 +1,141 @@
+/*Gerenral*/
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Variables*/
+
+:root {
+    --main-color:#69b99d;
+    --span-color:#89c5cc;
+    --menu-a-color:#3b324d;
+    --menu-hoover-color:#9d99a6;
+  }
+
+.top-bar{
+    display: flex;
+    width: 100%;
+    height: 95px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box{
+    cursor:pointer;
+    margin: 0 100px;
+    font-size: 10px;
+
+    & h1 {
+        font-weight: 900;
+    }
+    
+}
+
+.top-menu{
+    display: flex;
+    gap: 50px;
+    margin: 0 100px;
+    padding-right: 10px;
+    transition: 0.5s;
+
+    & a {
+        color:var(--menu-hoover-color);
+    }
+
+    & a:hover{
+        color: var(--menu-a-color);
+        font-weight: bold;
+        transition: 0.5s;
+    }
+}
+
+.imp{
+    color:var(--span-color);
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-text{
+    margin-left:50px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-top:85px;
+
+    & h1{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    & p{
+        font-size: 20px;
+        line-height: 35px;
+        margin: 25px 0;
+        color: var(--menu-hoover-color);
+    }
+    
+    & a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 150px;
+        border: 1px solid var(--main-color);
+        border-radius: 4px;
+        background-color: var(--main-color);
+        font-size: 15px;
+        color: #fff;
+        gap:10px;
+    }
+
+    & a i{
+        font-size: 30px;
+    }
+
+    & .span-p{
+        color: var(--menu-a-color);
+    }
+
+    a:hover{
+        font-weight: 900;
+        background-color: #10a370;
+        transition: 0.5s;
+
+        & i {
+            color:greenyellow;
+        }
+    }
+}
+
+.main-img{
+
+    & img {
+        padding-right: 50px;
+        height: 400px;
+    }
+}
+
+footer{
+    color: var(--menu-a-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+}
+
+.ft-span{
+    font-weight: bold;
+}
